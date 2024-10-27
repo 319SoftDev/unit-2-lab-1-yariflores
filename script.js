@@ -47,13 +47,13 @@ console.log(string4)
 // 7. Use console.log() and a built-in method to count how many characters are in Ricardo's name.
 
 // 8. Use console.log() and a built-in method to print out the string "RICARDO MONTOYA DE LA ROSA RAMIREZ"
-
+console.log(sibling3.toUpperCase())
 // 9. Use console.log() and a built-in method to print out the string "ricardo montoya de la rosa ramirez"
-
+console.log(sibling3.toLowerCase())
 // 10. Use console.log() and a built-in method to print out Ricardo's name, but with all the instances of the letter a removed or deleted.
-
+console.log(sibling3.replace("a",""))
 // 11. Use console.log() and a built-in method to print out "De La Rosa"
-
+console.log(sibling3.substring(16,27))
 // Medium Challenges
 
 // 12. Rewrite these function as an arrow function.
