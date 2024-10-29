@@ -45,7 +45,8 @@ let string4 = ` The three siblings are ${sibling1} , ${sibling2}, and ${sibling3
 console.log(string4)
 
 // 7. Use console.log() and a built-in method to count how many characters are in Ricardo's name.
-
+let ricardoNameLength = sibling3.length;
+console.log("Ricardo's name has " + ricardoNameLength + " characters.");
 // 8. Use console.log() and a built-in method to print out the string "RICARDO MONTOYA DE LA ROSA RAMIREZ"
 console.log(sibling3.toUpperCase())
 // 9. Use console.log() and a built-in method to print out the string "ricardo montoya de la rosa ramirez"
