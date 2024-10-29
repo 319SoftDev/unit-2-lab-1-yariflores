@@ -45,12 +45,16 @@ let string4 = ` The three siblings are ${sibling1} , ${sibling2}, and ${sibling3
 console.log(string4)
 
 // 7. Use console.log() and a built-in method to count how many characters are in Ricardo's name.
+//console.log( )
 let ricardoNameLength = sibling3.length;
 console.log("Ricardo's name has " + ricardoNameLength + " characters.");
+
 // 8. Use console.log() and a built-in method to print out the string "RICARDO MONTOYA DE LA ROSA RAMIREZ"
 console.log(sibling3.toUpperCase())
+
 // 9. Use console.log() and a built-in method to print out the string "ricardo montoya de la rosa ramirez"
 console.log(sibling3.toLowerCase())
+
 // 10. Use console.log() and a built-in method to print out Ricardo's name, but with all the instances of the letter a removed or deleted.
 console.log(sibling3.replace("a",""))
 // 11. Use console.log() and a built-in method to print out "De La Rosa"
@@ -60,57 +64,56 @@ console.log(sibling3.substring(16,27))
 // 12. Rewrite these function as an arrow function.
 /// Then, call them with different inputs to check the result.
 
-function getRandomNum() {
-    return Math.floor(Math.random() * 100);
-}
+const getRandomNUM = () =>Math.floor(Math.random() * 100);
 
-function greeting(name) {
-    return `Hello ${name}, I'm glad you can make it!`;
-}
+const greeting= (name) => `Hello ${name}, I'm glad you can make it!`;
 
-function perfectRoot(x) {
-    let root = Math.sqrt(x);
-    if (Math.floor(root) === root) {
-        return root;
-    } else {
-        return "No perfect root"
-    }
-}
+const perfectRoot = (x) => {
+    const root = Math.sqrt(x);
+    return Math.floor(root) === root ? root : "No perfect root";
+};
+
+console.log(getRandomNUM());
+console.log(greeting("Quinn"));
+console.log(perfectRoot(14));
 
 // 13. Fix/Finish the following functions.
 /// Then, call them with at least 2 different inputs to ensure they work.
 
 /// a. Adds 2 numbers and returns the sum
-const addNums = (x, y) => {
-    let sum = x + y;
+const addNums = (x, y) =>  {
+    return  x + y;
 }
 // uncomment the line below, to call the function, and add one more function call
-// console.log( addNums(4, 6) );
+console.log( addNums(4, 6) );
+console.log(addNums(7,10));
 
 
 /// b. Prints a special message if name is "Beyonce"
 const isBeyonce = (name) => {
-    if(gg ) { 
+    if(name == "Beyonce") { 
         return "Welcome Queen!";
     } else {
         return `Sorry {name}, you're not Beyonce`;
     }
 }
 // Test "Beyonce" and other names to ensure it works
-
-
+console.log(isBeyonce("Beyonce"));
+console.log(isBeyonce("Jordan"));
 
 /// c. If the number is even, return the number divided by 2, otherwise, return the number
 /// For example reduceEvens(10) => 5 -- reduceEvens(11) => 11
 const reduceEvens = (x) => {
-    if( hvgi){
+    if( x % 2 === 0 ){
+        return x / 2;
 
     } else {
         return x;
     }
 }
 //Write your own function calls
-
+console.log(reduceEvens(13));
+console.log(reduceEvens(12));
 
 // 14. Write a function called shortenString(string) that returns the first 10 characters of a string if it is longer than 10
 //remove all
@@ -148,3 +151,4 @@ const buyMeals = (budget) => {
 // 18. [Super Challenge] In math, Factorial is the product of an integer and all the integers below it.
 /// For example: factorial(3) = 3*2*1 = 6 ---  factorial(5) = 5*4*3*2*1 = 120
 /// Write a function factorial(x) that finds the factorial of any integer.
+
